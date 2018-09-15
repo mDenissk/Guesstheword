@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game">
+
+    <ImageView
+        android:id="@+id/visualAnswer"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/frame_11" />
+
+    <CheckBox
+        android:id="@+id/checkBoxA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:onClick="addLetter"
+        android:text="A"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxB"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxB" />
+
+    <CheckBox
+        android:id="@+id/checkBoxB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:onClick="addLetter"
+        android:text="B"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxC"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxA"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxC"
+        android:layout_marginLeft="0dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:onClick="addLetter"
+        android:text="C"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxD"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxB"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxD"
+        android:layout_marginLeft="0dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxD"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:enabled="true"
+        android:onClick="addLetter"
+        android:text="D"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxE"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxC"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxE" />
+
+    <CheckBox
+        android:id="@+id/checkBoxE"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:onClick="addLetter"
+        android:text="E"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxF"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxF"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxD"
+        android:layout_marginRight="0dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxF"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:enabled="true"
+        android:onClick="addLetter"
+        android:text="F"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxG"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxE"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxG" />
+
+    <CheckBox
+        android:id="@+id/checkBoxG"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:onClick="addLetter"
+        android:text="G"
+        android:layout_marginRight="0dp"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxF"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxN" />
+
+    <CheckBox
+        android:id="@+id/checkBoxH"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:onClick="addLetter"
+        android:text="H"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxI"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxI" />
+
+    <CheckBox
+        android:id="@+id/checkBoxI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:onClick="addLetter"
+        android:text="I"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxJ"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxH"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxJ"
+        android:layout_marginLeft="0dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxJ"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:onClick="addLetter"
+        android:text="J"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxK"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxI"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxK" />
+
+    <CheckBox
+        android:id="@+id/checkBoxK"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:enabled="true"
+        android:onClick="addLetter"
+        android:text="K"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxL"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxJ"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxL" />
+
+    <CheckBox
+        android:id="@+id/checkBoxL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:enabled="true"
+        android:onClick="addLetter"
+        android:text="L"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxM"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxK"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxM" />
+
+    <CheckBox
+        android:id="@+id/checkBoxM"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:enabled="true"
+        android:onClick="addLetter"
+        android:text="M"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxN"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxL"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxN" />
+
+    <CheckBox
+        android:id="@+id/checkBoxN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:enabled="true"
+        android:onClick="addLetter"
+        android:text="N"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxM"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxU" />
+
+    <CheckBox
+        android:id="@+id/checkBoxO"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:onClick="addLetter"
+        android:text="O"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxP"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxP" />
+
+    <CheckBox
+        android:id="@+id/checkBoxP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:onClick="addLetter"
+        android:text="P"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxQ"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxO"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxQ" />
+
+    <CheckBox
+        android:id="@+id/checkBoxQ"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:onClick="addLetter"
+        android:text="Q"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxR"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxP"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxR" />
+
+    <CheckBox
+        android:id="@+id/checkBoxR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:enabled="true"
+        android:onClick="addLetter"
+        android:text="R"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxS"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxQ"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxS" />
+
+    <CheckBox
+        android:id="@+id/checkBoxS"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:enabled="true"
+        android:onClick="addLetter"
+        android:text="S"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxT"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxR"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxT" />
+
+    <CheckBox
+        android:id="@+id/checkBoxT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:enabled="true"
+        android:onClick="addLetter"
+        android:text="T"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxU"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxS"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxU" />
+
+    <CheckBox
+        android:id="@+id/checkBoxU"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:enabled="true"
+        android:onClick="addLetter"
+        android:text="U"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxT"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox1" />
+
+    <CheckBox
+        android:id="@+id/checkBoxV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:onClick="addLetter"
+        android:text="V"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxW"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxW" />
+
+    <CheckBox
+        android:id="@+id/checkBoxW"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:onClick="addLetter"
+        android:text="W"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxX"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxV"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxX" />
+
+    <CheckBox
+        android:id="@+id/checkBoxX"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:onClick="addLetter"
+        android:text="X"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxY"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxW"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxY" />
+
+    <CheckBox
+        android:id="@+id/checkBoxY"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:enabled="true"
+        android:onClick="addLetter"
+        android:text="Y"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBoxZ"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxX"
+        app:layout_constraintRight_toLeftOf="@+id/checkBoxZ" />
+
+    <CheckBox
+        android:id="@+id/checkBoxZ"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:onClick="addLetter"
+        android:text="Z"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBox0"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxY"
+        app:layout_constraintRight_toLeftOf="@+id/checkBox0" />
+
+    <CheckBox
+        android:id="@+id/checkBox0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:enabled="true"
+        android:text="0"
+        android:visibility="invisible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBox1"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxZ"
+        app:layout_constraintRight_toLeftOf="@+id/checkBox1" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginRight="0dp"
+        android:enabled="true"
+        android:text="1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/checkBox0"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textSize="36sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visualAnswer" />
+
+    <Button
+        android:id="@+id/buttonNG"
+        android:layout_width="72dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="PressNewGame"
+        android:text="New Game"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
